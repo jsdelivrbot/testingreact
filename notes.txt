@@ -5,3 +5,29 @@ describe
 it
 
 expect
+
+purpose of wrapping specs in functions is to safely run tests without worrying about errors in code.
+
+Anatomy of an assertion
+
+expect(component).to.have.class('comment-box');
+
+to.have.class = assertion matcher, how to compare two given values
+
+When writing tests, we should list out what we care about:
+
+Comment Box
+We care about 
+	It has a text area
+	It has a button
+	Entering text into the text area updates the text
+
+Comment List
+We care about
+	it shows a comment in a li
+	given a list of comments, it shows all the comments
+
+write tests that allow other developers to refactor your code, so focused on the html output. 
+
+
+*** ONE TEST FILE PER COMPONENT
